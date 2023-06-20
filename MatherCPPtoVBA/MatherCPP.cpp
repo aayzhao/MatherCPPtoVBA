@@ -30,6 +30,16 @@ double MatherCPP::add_num_one(double num)
 	return num1 + num;
 }
 
+void MatherCPP::delta_num1(double num)
+{
+	num1 += num;
+}
+
+void MatherCPP::delta_num2(double num)
+{
+	num2 += num;
+}
+
 double MatherCPP::sum(double x, double y)
 {
 	return x + y;

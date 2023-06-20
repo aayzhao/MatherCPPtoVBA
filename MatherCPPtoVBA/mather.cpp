@@ -55,6 +55,22 @@ double WINAPI mather_add_2(void* m, double x)
 	return obj->add_num_one(x);
 }
 
+void WINAPI mather_delta_1(void* m, double x)
+{
+	if (m == NULL)
+		return;
+	MatherCPP* obj = (MatherCPP*)m;
+	return obj->delta_num1(x);
+}
+
+void WINAPI mather_delta_2(void* m, double x)
+{
+	if (m == NULL)
+		return;
+	MatherCPP* obj = (MatherCPP*)m;
+	return obj->delta_num2(x);
+}
+
 double WINAPI mather_sum(void* m, double x, double y)
 {
 	if (m == NULL)
